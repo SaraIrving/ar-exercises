@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+# ask the user for a store name and store it in a variable
+print "Enter a store name > "
+answer = gets.chomp
+
+# try to create a store with that name but leave out all other fields 
+Store.create(name: answer)
+
