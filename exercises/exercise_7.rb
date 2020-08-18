@@ -16,5 +16,10 @@ print "Enter a store name > "
 answer = gets.chomp
 
 # try to create a store with that name but leave out all other fields 
-Store.create(name: answer)
+puts "Before we try to make a new one"
+new = Store.create(name: answer)
+puts "here comes the error messages"
+puts new.valid?
+puts new.errors.messages
+
 
